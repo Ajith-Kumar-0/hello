@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrician Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background: url('electrician.jpg') no-repeat center center/cover;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 5px black;
+            text-align: center;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            padding: 2rem;
+        }
+        .service {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            text-align: center;
+        }
+        .service h3 {
+            margin-bottom: 1rem;
+        }
+        .contact {
+            background: #f4f4f4;
+            padding: 2rem;
+            text-align: center;
+        }
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact input, .contact textarea, .contact button {
+            width: 100%;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: white;
+        }
+        @media (max-width: 600px) {
+            .hero {
+                height: 30vh;
+                font-size: smaller;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Professional Electrician Services</h1>
+    </header>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="hero">
+        <h2>Your Trusted Partner for All Electrical Needs</h2>
+    </div>
+    <section id="services" class="services">
+        <div class="service">
+            <h3>Residential Wiring</h3>
+            <p>High-quality wiring for your home.</p>
+        </div>
+        <div class="service">
+            <h3>Commercial Installations</h3>
+            <p>Reliable solutions for businesses.</p>
+        </div>
+        <div class="service">
+            <h3>Emergency Repairs</h3>
+            <p>Available 24/7 for urgent issues.</p>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div style="padding: 2rem; text-align: center;">
+            <h2>About Us</h2>
+            <p>We are a team of licensed electricians dedicated to providing safe, efficient, and affordable electrical services. With years of experience, we ensure your satisfaction on every project.</p>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Electrician Services. All rights reserved.</p>
+    </footer>
+</body>
+</html>
